@@ -1,0 +1,12 @@
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.app { max-width: 600px; margin: 0 auto; }
+.add-form { display:flex; gap:8px; margin-bottom:12px; }
+.todo-list { list-style:none; padding:0; }
+.todo-item { display:flex; justify-content:space-between; align-items:center; padding:8px; border-bottom:1px solid #eee; }
+.delete-btn { background:#e74c3c; color:white; border:0; padding:6px 10px; border-radius:4px; }
+@media (min-width: 600px) {
+  /* BUG: wrong media query: hides delete button on small screens instead of showing */
+  .delete-btn { display:none; }
+}
+.done { text-decoration: line-through; color: #888; }
